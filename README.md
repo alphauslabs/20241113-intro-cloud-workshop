@@ -1,1 +1,1 @@
-# 20241113-intro-cloud-workshop
+Reference for 2024-11-13 workshop on Intro to Cloud (part 2).
