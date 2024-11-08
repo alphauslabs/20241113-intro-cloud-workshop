@@ -4,6 +4,9 @@ You will receive a file for authentication. Save it somewhere in your system and
 
 ``` sh
 $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/json/file.json
+
+# Check access:
+$ gcloud auth print-access-token
 ```
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
