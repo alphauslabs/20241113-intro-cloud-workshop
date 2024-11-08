@@ -1,3 +1,5 @@
+## Setup
+
 Install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info.
 
 You will receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file; like so:
