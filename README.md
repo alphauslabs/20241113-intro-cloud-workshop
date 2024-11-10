@@ -71,6 +71,9 @@ $ docker build --rm -t mysite .
 
 # Tag it so we can upload to Artifact Registry. Replace 'chew' with your nickname:
 $ docker tag mysite asia.gcr.io/labs-169405/mysite:chew1
+
+# Upload to Artifact Registry:
+$ docker push asia.gcr.io/labs-169405/mysite:chew1
 ```
 
 ## Exercise 2 (optional) - a simple file browser
