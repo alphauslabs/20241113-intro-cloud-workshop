@@ -136,4 +136,6 @@ $ gcloud run deploy fbchew \
     --allow-unauthenticated \
     --add-volume name=for-bisu-workshop,type=nfs,location=10.55.65.2:/fbw \
     --add-volume-mount volume=for-bisu-workshop,mount-path=/mnt/fbw
+
+# You can access your file browser through the URL using 'admin' as both username and password.
 ```
