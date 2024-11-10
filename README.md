@@ -12,7 +12,7 @@ $ gcloud version
 $ docker version
 ```
 
-To access GCP, you will receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file; like so:
+To access GCP, you will receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file's location; like so:
 
 ``` sh
 $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/json/file.json
