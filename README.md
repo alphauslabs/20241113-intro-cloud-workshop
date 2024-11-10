@@ -111,11 +111,11 @@ $ mv file1 /mnt/fbw/chew/
 Once your files are ready, build your image and deploy it to Cloud Run:
 
 ``` sh
-# Create another working folder for this exercise. Copy the 'dockerfile-fb' file
-# to that folder and rename it to 'Dockerfile'.
-# Update the last line with your own folder created in the previous step.
+# Create another working folder for this exercise.
 $ mkdir myfb
 $ cd myfb/
+# Copy the 'dockerfile-fb' file to that folder and rename it to 'Dockerfile'.
+# Update the last line with your own folder created in the previous step.
 
 # Create your docker image. Replace 'chew' with your nickname:
 $ docker build --rm -t fbchew .
