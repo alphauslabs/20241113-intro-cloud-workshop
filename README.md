@@ -100,10 +100,13 @@ $ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
 
 # The location will be in the /mnt/fbw/ folder. You can create a folder there using
 # your nickname as the dir name. Then you can copy files from your local to your folder
-# using the command below:
-$ gcloud compute scp file fbw-client:/mnt/fbw/myfolder/ \
+# using the command below. The following example copies the file 'file1' to the home
+# folder, then ssh again to move the file to /mnt/fbw/chew/. Replace 'chew' with your nickname.
+$ gcloud compute scp file1 fbw-client:~/ \
     --project labs-169405 \
     --zone asia-northeast1-a
+$ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
+$ mv file1 /mnt/fbw/chew/
 ```
 
 Deploy a file browser exposing own FileStore folder.
