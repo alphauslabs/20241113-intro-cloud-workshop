@@ -13,7 +13,7 @@ $ gcloud auth print-access-token
 
 ## Exercise 1 - a simple "About me" page
 
-tbd
+Install `brew` to you local environment. More information [here](https://brew.sh/).
 
 ## Exercise 2 (optional) - a simple file browser
 
