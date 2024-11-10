@@ -2,7 +2,7 @@
 
 **NOTE: Some members of Alphaus will be there to assist you with the commands and explanations provided below. Please don't hesitate to ask for their assistance.**
 
-If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Install [`docker`](https://docs.docker.com/engine/install/) as well.
+If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Then install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Finally, install [`docker`](https://docs.docker.com/engine/install/) as well.
 
 You will receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file; like so:
 
