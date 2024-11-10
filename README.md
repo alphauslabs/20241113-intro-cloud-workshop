@@ -61,6 +61,13 @@ $ hugo serve
 
 Try editing the `index.md` file with your personal information.
 
+Once your page is ready, try deploying it to Cloud Run, like so:
+
+``` sh
+# Copy the reference Dockerfile to your site directory:
+$ wget https://raw.githubusercontent.com/alphauslabs/20241113-intro-cloud-workshop/refs/heads/main/Dockerfile
+```
+
 ## Exercise 2 (optional) - a simple file browser
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
