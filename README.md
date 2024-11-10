@@ -64,7 +64,7 @@ Try editing the `index.md` file with your personal information.
 Once your page is ready, try deploying it to Cloud Run, like so:
 
 ``` sh
-# Copy the reference Dockerfile to your site directory:
+# Copy the reference Dockerfile to your site directory.
 
 # Create your docker image:
 $ docker build --rm -t mysite .
