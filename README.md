@@ -17,11 +17,19 @@ Install `brew` to you local environment. More information [here](https://brew.sh
 
 Install `hugo` like so:
 
-```
+``` sh
 $ brew install hugo
 ```
 
 Once `hugo` is installed, let's start creating our **About me** page.
+
+``` sh
+# Create main folder:
+$ hugo new site mysite
+$ cd mysite/
+# Let's use m10c as our theme:
+$ git clone https://github.com/vaga/hugo-theme-m10c.git themes/hugo-theme-m10c
+```
 
 ## Exercise 2 (optional) - a simple file browser
 
