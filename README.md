@@ -111,8 +111,11 @@ $ mv file1 /mnt/fbw/chew/
 Once your files are ready, build your image and deploy it to Cloud Run:
 
 ``` sh
-# Copy the 'dockerfile-fb' file to your local and rename it to 'Dockerfile'.
-# Update the last line 
+# Create another working folder for this exercise. Copy the 'dockerfile-fb' file
+# to that folder and rename it to 'Dockerfile'.
+# Update the last line with your own folder created in the previous step.
+$ mkdir myfb
+$ cd myfb/
 
 # Create your docker image. Replace 'chew' with your nickname:
 $ docker build --rm -t fbchew .
@@ -123,15 +126,10 @@ $ docker tag fbchew asia.gcr.io/labs-169405/fbchew:v1
 # Upload to Artifact Registry. Replace 'chew' with your nickname:
 $ docker push asia.gcr.io/labs-169405/fbchew:v1
 
-# Deploy to Cloud Run. Replace 'chew' with your nickname: 
-```
-
-Deploy a file browser exposing own FileStore folder.
-
-``` sh
-$ gcloud run deploy filebrowser \
+# Deploy a file browser exposing own FileStore folder. Replace 'chew' with your nickname:
+$ gcloud run deploy fbchew \
     --project=labs-169405 \
-    --image=asia.gcr.io/labs-169405/filebrowser:fbw1 \
+    --image=asia.gcr.io/labs-169405/fbchew:v1 \
     --region=asia-northeast1 \
     --network dev \
     --max-instances=1 \
