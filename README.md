@@ -59,6 +59,8 @@ $ hugo serve
 # Then use your browser to open the URL indicated in the logs.
 ```
 
+Try editing the `index.md` file with your personal information.
+
 ## Exercise 2 (optional) - a simple file browser
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
