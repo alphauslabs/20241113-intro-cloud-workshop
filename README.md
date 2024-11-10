@@ -44,6 +44,13 @@ together with the following contents:
   avatar = "url-to-a-public-avatar"
 ```
 
+Create an `index.md` inside `content` folder like so:
+
+``` sh
+$ cd contents/
+$ echo '# About me' > index.md
+```
+
 ## Exercise 2 (optional) - a simple file browser
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
