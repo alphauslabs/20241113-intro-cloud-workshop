@@ -1,6 +1,6 @@
 ## Setup
 
-**NOTE: Some members of Alphaus will be there to assist you with the commands and explanations provided below. Please don't hesitate to ask for their assistance.**
+**NOTE: Some members of Alphaus are here to assist you with the commands and explanations provided below. Please don't hesitate to ask for their assistance.**
 
 If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Then install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Finally, install [`docker`](https://docs.docker.com/engine/install/) as well. You can confirm your setup using the following commands:
 
