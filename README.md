@@ -66,19 +66,19 @@ Once your page is ready, try deploying it to Cloud Run, like so:
 ``` sh
 # Copy the reference Dockerfile to your site directory.
 
-# Create your docker image:
-$ docker build --rm -t mysite .
+# Create your docker image. Replace 'chew' with your nickname:
+$ docker build --rm -t sitechew .
 
 # Tag it so we can upload to Artifact Registry. Replace 'chew' with your nickname:
-$ docker tag mysite asia.gcr.io/labs-169405/mysite:chew1
+$ docker tag sitechew asia.gcr.io/labs-169405/sitechew:v1
 
-# Upload to Artifact Registry:
-$ docker push asia.gcr.io/labs-169405/mysite:chew1
+# Upload to Artifact Registry. Replace 'chew' with your nickname:
+$ docker push asia.gcr.io/labs-169405/sitechew:v1
 
 # Deploy to Cloud Run. Replace 'chew' with your nickname:
 $ gcloud run deploy chew \
     --project=labs-169405 \
-    --image=asia.gcr.io/labs-169405/mysite:chew1 \
+    --image=asia.gcr.io/labs-169405/sitechew:v1 \
     --region=asia-northeast1 \
     --network dev \
     --max-instances=1 \
