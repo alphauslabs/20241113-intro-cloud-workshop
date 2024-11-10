@@ -65,7 +65,8 @@ Once your page is ready, try deploying it to Cloud Run, like so:
 
 ``` sh
 # Copy the reference Dockerfile to your site directory:
-$ wget https://raw.githubusercontent.com/alphauslabs/20241113-intro-cloud-workshop/refs/heads/main/Dockerfile
+$ wget \
+  https://raw.githubusercontent.com/alphauslabs/20241113-intro-cloud-workshop/refs/heads/main/Dockerfile
 ```
 
 ## Exercise 2 (optional) - a simple file browser
