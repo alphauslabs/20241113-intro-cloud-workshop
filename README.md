@@ -64,7 +64,7 @@ Try editing the `index.md` file with your personal information.
 Once your page is ready, try deploying it to Cloud Run, like so:
 
 ``` sh
-# Copy the 'dockerfile-site' file to your site directory.
+# Copy the 'dockerfile-site' file to your site directory and rename it to 'Dockerfile'.
 
 # Create your docker image. Replace 'chew' with your nickname:
 $ docker build --rm -t sitechew .
