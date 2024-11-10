@@ -74,6 +74,15 @@ $ docker tag mysite asia.gcr.io/labs-169405/mysite:chew1
 
 # Upload to Artifact Registry:
 $ docker push asia.gcr.io/labs-169405/mysite:chew1
+
+# Deploy to Cloud Run. Replace 'chew' with your nickname:
+$ gcloud run deploy chew \
+    --project=labs-169405 \
+    --image=asia.gcr.io/labs-169405/mysite:chew1 \
+    --region=asia-northeast1 \
+    --network dev \
+    --max-instances=1 \
+    --allow-unauthenticated
 ```
 
 ## Exercise 2 (optional) - a simple file browser
