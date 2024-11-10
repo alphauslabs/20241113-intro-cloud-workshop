@@ -11,6 +11,12 @@ $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/json/file.json
 $ gcloud auth print-access-token
 ```
 
+## Exercise 1 - a simple "About me" page
+
+tbd
+
+## Exercise 2 (optional) - a simple file browser
+
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
 
 ``` sh
