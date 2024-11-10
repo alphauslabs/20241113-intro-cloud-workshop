@@ -93,11 +93,9 @@ $ gcloud run deploy chew \
 
 This is a bonus exercise. You can do this if you've finished the 1st one and still have time. This exercise is similar to the 1st one.
 
-First, let's try to prepare the files for your file browser. We will use FileStore as our shared storage. You can use this VM to access our FileStore instance.
+First, let's try to prepare the files for your file browser. We will use FileStore as our shared storage.
 
 ``` sh
-$ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
-
 # The location will be in the /mnt/fbw/ folder. You can create a folder there using
 # your nickname as the dir name. Then you can copy files from your local to your
 # folder using the command below. The following example copies the file 'file1'
@@ -108,6 +106,24 @@ $ gcloud compute scp file1 fbw-client:~/ \
     --zone asia-northeast1-a
 $ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
 $ mv file1 /mnt/fbw/chew/
+```
+
+Once your files are ready, build your image and deploy it to Cloud Run:
+
+``` sh
+# Copy the 'dockerfile-fb' file to your local and rename it to 'Dockerfile'.
+# Update the last line 
+
+# Create your docker image. Replace 'chew' with your nickname:
+$ docker build --rm -t fbchew .
+
+# Tag it so we can upload to Artifact Registry. Replace 'chew' with your nickname:
+$ docker tag fbchew asia.gcr.io/labs-169405/fbchew:v1
+
+# Upload to Artifact Registry. Replace 'chew' with your nickname:
+$ docker push asia.gcr.io/labs-169405/fbchew:v1
+
+# Deploy to Cloud Run. Replace 'chew' with your nickname: 
 ```
 
 Deploy a file browser exposing own FileStore folder.
