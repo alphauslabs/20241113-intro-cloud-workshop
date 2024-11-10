@@ -83,6 +83,8 @@ $ gcloud run deploy chew \
     --network dev \
     --max-instances=1 \
     --allow-unauthenticated
+
+# You can now access your site through the resulting URL.
 ```
 
 ## Exercise 2 (optional) - a simple file browser
