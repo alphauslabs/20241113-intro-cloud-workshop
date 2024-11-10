@@ -31,6 +31,19 @@ $ cd mysite/
 $ git clone https://github.com/vaga/hugo-theme-m10c.git themes/hugo-theme-m10c
 ```
 
+Edit `hugo.toml` and update `title` to your name. Then add the line
+
+```
+theme = hugo-theme-m10c
+```
+together with the following contents:
+
+```
+[params]
+  description = "{Your short description here."
+  avatar = "url-to-a-public-avatar"
+```
+
 ## Exercise 2 (optional) - a simple file browser
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
