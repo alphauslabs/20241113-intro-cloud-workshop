@@ -1,6 +1,6 @@
 ## Setup
 
-Install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info.
+Install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Install [`docker`](https://docs.docker.com/engine/install/) as well.
 
 You will receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file; like so:
 
@@ -65,8 +65,7 @@ Once your page is ready, try deploying it to Cloud Run, like so:
 
 ``` sh
 # Copy the reference Dockerfile to your site directory:
-$ wget \
-  https://raw.githubusercontent.com/alphauslabs/20241113-intro-cloud-workshop/refs/heads/main/Dockerfile
+$ 
 ```
 
 ## Exercise 2 (optional) - a simple file browser
