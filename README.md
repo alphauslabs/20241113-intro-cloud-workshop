@@ -23,7 +23,7 @@ We will use [Hugo](https://gohugo.io/) as our main tool. You can install it like
 $ brew install hugo
 ```
 
-Once `hugo` is installed, let's start creating our **About me** page.
+Once Hugo is installed, let's start creating our **About me** page.
 
 ``` sh
 # Create main folder:
@@ -91,12 +91,14 @@ $ gcloud run deploy chew \
 
 ## Exercise 2 (optional) - a simple file browser
 
-This is a bonus exercise. You can do this if you've finished the 1st one and still have time.
+This is a bonus exercise. You can do this if you've finished the 1st one and still have time. This exercise is similar to the 1st one.
 
-You can use this VM to access our FileStore instance (e.g. add files, etc.).
+First, let's try to prepare the files for your file browser. We will use FileStore as our shared storage. You can use this VM to access our FileStore instance.
 
 ``` sh
 $ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
+
+# The location will be in the /mnt/fbw/ folder. You can create a folder there using your nickname as the dir name.
 ```
 
 Deploy a file browser exposing own FileStore folder.
