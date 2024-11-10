@@ -40,8 +40,8 @@ together with the following contents:
 
 ```
 [params]
-  description = "{Your short description here."
-  avatar = "url-to-a-public-avatar"
+  description = "{Your short description here.}"
+  avatar = "{url-to-a-public-avatar}"
 ```
 
 Create an `index.md` inside `content` folder like so:
