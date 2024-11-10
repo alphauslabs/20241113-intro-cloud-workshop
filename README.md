@@ -22,9 +22,10 @@ Deploy a file browser exposing own FileStore folder.
 ``` sh
 $ gcloud run deploy filebrowser \
     --project=labs-169405 \
-    --image=asia.gcr.io/labs-169405/filebrowser:v4 \
+    --image=asia.gcr.io/labs-169405/filebrowser:fbw1 \
     --region=asia-northeast1 \
     --network dev \
+    --max-instances=1 \
     --allow-unauthenticated \
     --add-volume name=for-bisu-workshop,type=nfs,location=10.55.65.2:/fbw \
     --add-volume-mount volume=for-bisu-workshop,mount-path=/mnt/fbw
