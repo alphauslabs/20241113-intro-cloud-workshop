@@ -13,9 +13,11 @@ $ gcloud auth print-access-token
 
 ## Exercise 1 - a simple "About me" page
 
-Install `brew` to you local environment. More information [here](https://brew.sh/).
+This exercise will guide you in creating a simple "About me" page, and deploy it in Cloud Run.
 
-Install `hugo` like so:
+First, install `brew` to you local environment. More information [here](https://brew.sh/).
+
+We will use [Hugo](https://gohugo.io/) as our main tool. You can install it like so:
 
 ``` sh
 $ brew install hugo
@@ -88,6 +90,8 @@ $ gcloud run deploy chew \
 ```
 
 ## Exercise 2 (optional) - a simple file browser
+
+This is a bonus exercise. You can do this if you've finished the 1st one and still have time.
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
 
