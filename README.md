@@ -15,6 +15,14 @@ $ gcloud auth print-access-token
 
 Install `brew` to you local environment. More information [here](https://brew.sh/).
 
+Install `hugo` like so:
+
+```
+$ brew install hugo
+```
+
+Once `hugo` is installed, let's start creating our **About me** page.
+
 ## Exercise 2 (optional) - a simple file browser
 
 You can use this VM to access our FileStore instance (e.g. add files, etc.).
