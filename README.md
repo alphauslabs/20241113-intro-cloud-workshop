@@ -1,6 +1,6 @@
 ## Setup
 
-Install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Install [`docker`](https://docs.docker.com/engine/install/) as well.
+If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Install [`docker`](https://docs.docker.com/engine/install/) as well.
 
 You will receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file; like so:
 
