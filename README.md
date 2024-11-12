@@ -115,7 +115,7 @@ $ gcloud compute scp file1 fbw-client:~/ \
     --project labs-169405 \
     --zone asia-northeast1-a
 $ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
-$ mv file1 /mnt/fbw/chew/
+$ sudo mv file1 /mnt/fbw/chew/
 ```
 
 Once your files are ready, build your image and deploy it to Cloud Run:
