@@ -21,7 +21,7 @@ $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/json/file.json
 $ gcloud auth print-access-token
 ```
 
-## Exercise 1 - a simple "About me" page
+## Exercise 1 - A simple "About me" page
 
 This exercise will guide you in creating a simple "About me" page, and deploy it in Cloud Run.
 
@@ -99,7 +99,7 @@ $ gcloud run deploy chew \
 # You can now access your site through the resulting URL.
 ```
 
-## Exercise 2 (optional) - a simple file browser
+## Exercise 2 (optional) - A simple file browser
 
 This is a bonus exercise. You can do this if you've finished the 1st one and still have time. This exercise is similar to the 1st one.
 
