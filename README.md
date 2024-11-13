@@ -19,6 +19,11 @@ $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/json/file.json
 
 # Check access:
 $ gcloud auth print-access-token
+
+# If gcloud requires you to login, try the following commands:
+$ gcloud auth activate-service-account --key-file /path/to/your/json/file.json
+$ gcloud --quiet config set project labs-169405
+$ gcloud --quiet auth configure-docker
 ```
 
 ## Exercise 1 - A simple "About me" page
