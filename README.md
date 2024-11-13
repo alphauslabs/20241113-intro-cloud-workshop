@@ -12,7 +12,7 @@ $ gcloud version
 $ docker version
 ```
 
-Open this [link](https://console.cloud.google.com/run?project=labs-169405) to confirm your access. You will also receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file's location; like so:
+We will be using GCP for the workshop. Open this [link](https://console.cloud.google.com/run?project=labs-169405) to confirm your access. You will also receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file's location; like so:
 
 ``` sh
 $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/json/file.json
