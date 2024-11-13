@@ -2,6 +2,8 @@
 
 **NOTE: Some members of Alphaus are here to assist you with the commands and explanations provided below. Please don't hesitate to ask for their assistance.**
 
+Reference slides (from part 1): https://github.com/alphauslabs/20241106-intro-cloud/blob/main/2024-11-06_Intro_to_Cloud_Computing.pdf
+
 If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Then install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Also, make sure you have your favorite editor (e.g. VSCode, Vim, Emacs, etc.) ready. Finally, install [`docker`](https://docs.docker.com/engine/install/) as well. You can confirm your setup using the following commands:
 
 ``` sh
