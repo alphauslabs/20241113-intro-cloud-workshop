@@ -2,7 +2,7 @@
 
 **NOTE: Some members of Alphaus are here to assist you with the commands and explanations provided below. Please don't hesitate to ask for their assistance.**
 
-If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Then install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Finally, install [`docker`](https://docs.docker.com/engine/install/) as well. You can confirm your setup using the following commands:
+If you're running Windows, try installing [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) so you can have access to a Linux-based environment. Then install the `gcloud` CLI and SDK. See [here](https://cloud.google.com/sdk/docs/install) for more info. Also, make sure you have your favorite editor (e.g. Visual Studio Code, Vim, Emacs, etc.) ready. Finally, install [`docker`](https://docs.docker.com/engine/install/) as well. You can confirm your setup using the following commands:
 
 ``` sh
 # Check gcloud:
