@@ -59,7 +59,7 @@ together with the following contents:
 Create an `index.md` inside `content` folder like so:
 
 ``` sh
-$ cd contents/
+$ cd content/
 $ echo '# About me' > index.md
 ```
 
