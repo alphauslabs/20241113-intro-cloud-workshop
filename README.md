@@ -103,7 +103,7 @@ $ gcloud run deploy chew \
     --project=mobingi-main \
     --image=asia.gcr.io/mobingi-main/sitechew:v1 \
     --region=asia-northeast1 \
-    --network dev \
+    --network default \
     --max-instances=1 \
     --allow-unauthenticated
 
