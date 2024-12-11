@@ -28,7 +28,8 @@ $ gcloud --quiet config set project mobingi-main
 $ gcloud auth configure-docker asia-northeast1-docker.pkg.dev
 
 $ base64 /path/to/file.json > /path/to/newfile.json
-$ cat /path/to/newfile.json | docker login -u _json_key_base64 --password-stdin https://asia-northeast1-docker.pkg.dev
+$ cat /path/to/newfile.json | docker login -u _json_key_base64 \
+  --password-stdin https://asia-northeast1-docker.pkg.dev
 ```
 
 ## Exercise 1 - A simple "About me" page
