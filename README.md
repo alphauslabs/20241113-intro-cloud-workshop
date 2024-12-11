@@ -12,6 +12,8 @@ $ gcloud version
 
 # Check docker:
 $ docker version
+
+$ sudo usermod -a -G docker ${USER}
 ```
 
 We will be using GCP for the workshop. Open this [link](https://console.cloud.google.com/run?project=labs-169405) to confirm your access. You will also receive a file for authentication. Save it somewhere in your system and create an environment variable with the value pointing to that file's location; like so:
