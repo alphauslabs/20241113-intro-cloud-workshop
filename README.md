@@ -25,7 +25,7 @@ $ gcloud auth print-access-token
 # If gcloud requires you to login, try the following commands:
 $ gcloud auth activate-service-account --key-file /path/to/your/json/file.json
 $ gcloud --quiet config set project mobingi-main
-$ gcloud auth configure-docker asia-docker.pkg.dev
+$ gcloud auth configure-docker asia-northeast1-docker.pkg.dev
 ```
 
 ## Exercise 1 - A simple "About me" page
