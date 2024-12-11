@@ -24,7 +24,7 @@ $ gcloud auth print-access-token
 
 # If gcloud requires you to login, try the following commands:
 $ gcloud auth activate-service-account --key-file /path/to/your/json/file.json
-$ gcloud --quiet config set project labs-169405
+$ gcloud --quiet config set project mobingi-main
 $ gcloud --quiet auth configure-docker
 ```
 
@@ -89,15 +89,15 @@ Once your page is ready, try deploying it to Cloud Run, like so:
 $ docker build --rm -t sitechew .
 
 # Tag it so we can upload to Artifact Registry. Replace 'chew' with your nickname:
-$ docker tag sitechew asia.gcr.io/labs-169405/sitechew:v1
+$ docker tag sitechew asia.gcr.io/mobingi-main/sitechew:v1
 
 # Upload to Artifact Registry. Replace 'chew' with your nickname:
-$ docker push asia.gcr.io/labs-169405/sitechew:v1
+$ docker push asia.gcr.io/mobingi-main/sitechew:v1
 
 # Deploy to Cloud Run. Replace 'chew' with your nickname:
 $ gcloud run deploy chew \
-    --project=labs-169405 \
-    --image=asia.gcr.io/labs-169405/sitechew:v1 \
+    --project=mobingi-main \
+    --image=asia.gcr.io/mobingi-main/sitechew:v1 \
     --region=asia-northeast1 \
     --network dev \
     --max-instances=1 \
@@ -119,9 +119,9 @@ First, let's try to prepare the files for your file browser. We will use FileSto
 # to the home folder, then ssh again to move the file to /mnt/fbw/chew/. Replace
 # 'chew' with your nickname.
 $ gcloud compute scp file1 fbw-client:~/ \
-    --project labs-169405 \
+    --project mobingi-main \
     --zone asia-northeast1-a
-$ gcloud compute ssh fbw-client --project labs-169405 --zone asia-northeast1-a
+$ gcloud compute ssh fbw-client --project mobingi-main --zone asia-northeast1-a
 $ sudo mv file1 /mnt/fbw/chew/
 ```
 
@@ -138,15 +138,15 @@ $ cd myfb/
 $ docker build --rm -t fbchew .
 
 # Tag it so we can upload to Artifact Registry. Replace 'chew' with your nickname:
-$ docker tag fbchew asia.gcr.io/labs-169405/fbchew:v1
+$ docker tag fbchew asia.gcr.io/mobingi-main/fbchew:v1
 
 # Upload to Artifact Registry. Replace 'chew' with your nickname:
-$ docker push asia.gcr.io/labs-169405/fbchew:v1
+$ docker push asia.gcr.io/mobingi-main/fbchew:v1
 
 # Deploy a file browser exposing own FileStore folder. Replace 'chew' with your nickname:
 $ gcloud run deploy fbchew \
-    --project=labs-169405 \
-    --image=asia.gcr.io/labs-169405/fbchew:v1 \
+    --project=mobingi-main \
+    --image=asia.gcr.io/mobingi-main/fbchew:v1 \
     --region=asia-northeast1 \
     --network dev \
     --max-instances=1 \
